@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jam</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" type="image/x-icon" href="images/favicons/favicon.ico">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="btn__up">&uarr;</div>
+      <header class="header" id="home">
+         <div class="header__inner">
+            <div class="header__top">
+               <div class="container">
+                  <div class="header__top-inner">
+                     <div class="header__contacts">
+                        <div class="logo__box">
+                           <a class="logo" href="#">
+                              <img class="logo__img" src="images/logo.svg" alt="логотип">
+                           </a>
+                           <p class="logo__box-text">
+                              Организация выездного
+                              ресторанного обслуживания
+                              массовых мероприятий
+                           </p>
+                        </div>
+                        <div class="contacts__box">
+                           <div class="contacts__social" data-da=".menu__list,525,last">
+                              <p class="contacts__questions">
+                                 Есть вопрос?
+                                 Задайте онлайн
+                              </p>
+                              <ul class="contacts__social-list">
+                                 <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="#">
+                                       <svg class="social__img social__img-whatsapp" width="40" height="41"
+                                          viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect y="0.5" width="40" height="40" rx="20" fill="#20BC5F" />
+                                          <path
+                                             d="M24.3289 22.3885C24.0947 22.2682 22.9281 21.6967 22.7111 21.6193C22.4941 21.5377 22.3352 21.499 22.1783 21.7396C22.0193 21.9781 21.5682 22.5088 21.4264 22.6699C21.2889 22.8289 21.1492 22.8482 20.915 22.7301C19.5229 22.034 18.6098 21.4883 17.6924 19.9135C17.4496 19.4945 17.9352 19.5246 18.3885 18.6201C18.4658 18.4611 18.4271 18.3258 18.367 18.2055C18.3068 18.0852 17.8342 16.9207 17.6365 16.4459C17.4453 15.984 17.2477 16.0484 17.1037 16.0398C16.9662 16.0312 16.8094 16.0312 16.6504 16.0312C16.4914 16.0312 16.2357 16.0914 16.0188 16.3256C15.8018 16.5641 15.1895 17.1377 15.1895 18.3021C15.1895 19.4666 16.0381 20.5945 16.1541 20.7535C16.2744 20.9125 17.8234 23.3016 20.2018 24.3307C21.7057 24.9795 22.2943 25.0354 23.0463 24.9236C23.5039 24.8549 24.4471 24.3521 24.6426 23.7957C24.8381 23.2414 24.8381 22.7666 24.7801 22.6678C24.7221 22.5625 24.5631 22.5023 24.3289 22.3885Z"
+                                             fill="white" />
+                                          <path
+                                             d="M28.8775 16.7703C28.3919 15.6166 27.6958 14.5811 26.8085 13.6916C25.9212 12.8043 24.8857 12.1061 23.7298 11.6227C22.5482 11.1264 21.2935 10.875 20.0001 10.875H19.9572C18.6552 10.8814 17.3941 11.1393 16.2081 11.6463C15.063 12.1361 14.0361 12.8322 13.1573 13.7195C12.2786 14.6068 11.589 15.6381 11.112 16.7875C10.6179 17.9777 10.3687 19.2432 10.3751 20.5451C10.3816 22.0361 10.7382 23.5164 11.4064 24.8398V28.1055C11.4064 28.6512 11.8489 29.0938 12.3947 29.0938H15.6624C16.9859 29.7619 18.4661 30.1186 19.9572 30.125H20.0023C21.2892 30.125 22.5374 29.8758 23.7126 29.3881C24.862 28.909 25.8954 28.2215 26.7806 27.3428C27.6679 26.4641 28.3661 25.4371 28.8538 24.292C29.3609 23.1061 29.6187 21.8449 29.6251 20.543C29.6316 19.2346 29.378 17.9648 28.8775 16.7703ZM25.6312 26.1805C24.1251 27.6715 22.1271 28.4922 20.0001 28.4922H19.9636C18.6681 28.4857 17.3812 28.1635 16.2447 27.5576L16.0642 27.4609H13.0392V24.4359L12.9425 24.2555C12.3366 23.1189 12.0144 21.832 12.0079 20.5365C11.9993 18.3945 12.8179 16.3836 14.3197 14.8689C15.8193 13.3543 17.8238 12.5164 19.9657 12.5078H20.0023C21.0765 12.5078 22.1185 12.7162 23.1003 13.1287C24.0585 13.5305 24.9179 14.1084 25.657 14.8475C26.3939 15.5844 26.9739 16.4459 27.3757 17.4041C27.7925 18.3967 28.0009 19.4494 27.9966 20.5365C27.9837 22.6764 27.1437 24.6809 25.6312 26.1805Z"
+                                             fill="white" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="#">
+                                       <svg class="social__img social__img-telegram" width="40" height="41"
+                                          viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect y="0.5" width="40" height="40" rx="20" fill="#0088CC"
+                                             fill-opacity="0.9" />
+                                          <path
+                                             d="M30 12.6052L10 20.5L17.3684 21.5526M30 12.6052L27.3684 28.3947L17.3684 21.5526M30 12.6052L17.3684 21.5526M17.3684 21.5526V27.3421L20.7882 23.8925"
+                                             stroke="white" stroke-width="1.57895" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="contacts__phone">
+                              <div class="contacts__item contacts__item-phone" data-da=".menu__list,767,last">
+                                 <a class="phone" href="tel:79852624836">
+                                    +7 (985) 262-48-36
+                                 </a>
+                                 <p class="phone__info">
+                                    Перезвоните мне
+                                 </p>
+                              </div>
+                              <div class="contacts__item contacts__item-mobile">
+                                 <a class="phone__mobile" href="tel:79852624836">
+                                    <img class="phone__mobile-img" src="images/icons/phone-mobile-icon.svg" alt="">
+                                 </a>
+                              </div>
+                              <div class="contacts__item contacts__item-btn">
+                                 <a class="order__btn" href="#">
+                                    Заказать кейтеринг
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <button type="button" class="icon-menu"><span></span></button>
+                     </div>
+                     <div class="header__navigation">
+                        <nav class="menu">
+                           <ul class="menu__list">
+                              <li class="menu__list-item-fake">
+                                 <a class="menu__list-link menu__link-active" href="#home"></a>
+                              </li>
+                              <li class="menu__list-item logo__item">
+                                 <a class="logo" href="#">
+                                    <img class="logo__img" src="images/logo.svg" alt="логотип">
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#company">Компания</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#">Кейтеринг</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#">Варианты меню</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#">Преимущества</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#">Команда</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#questions">Вопрос—ответ</a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a class="menu__list-link" href="#contacts">Контакты</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header__content">
+               <div class="container">
+                  <div class="header__content-inner">
+                     <div class="header__title-box">
+                        <p class="header__description">
+                           Организуем и проведем
+                        </p>
+                        <h1 class="header__title">
+                           Выездной кейтеринг
+                        </h1>
+                        <h3 class="header__sub-title">
+                           круглый год под открытым небом
+                        </h3>
+                        <p class="header__info">
+                           Сделайте любое событие незабываемым с ресторанным сервисом и обслуживанием для массовых
+                           мероприятий любого формата!
+                        </p>
+                        <div class="header__btn-box">
+                           <button class="get__btn">
+                              Получить предложение
+                           </button>
+                           <div class="special-offer">
+                              <img class="special-offer__img" src="images/icons/special-offer-icon.svg" alt="">
+                              <p class="special-offer__text">
+                                 Получите персональное предложение <br>
+                                 в рамках формата и бюджета мероприятия
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="header__info-box">
+                        <ul class="header__info-list">
+                           <li class="header__info-item">
+                              <div class="info-item-box">
+                                 <div class="info__num">
+                                    7
+                                 </div>
+                                 <p class="info__text">
+                                    уникльных
+                                 </p>
+                                 <p class="info__text">
+                                    концепций меню
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="header__info-item">
+                              <div class="info-item-box">
+                                 <div class="info__num">
+                                    12
+                                 </div>
+                                 <p class="info__text">
+                                    лет опыта
+                                 </p>
+                                 <p class="info__text">
+                                    в ресторанном бизнесе
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="header__info-item">
+                              <div class="info-item-box">
+                                 <div class="info__num">
+                                    50+
+                                 </div>
+                                 <p class="info__text">
+                                    человек
+                                 </p>
+                                 <p class="info__text">
+                                    в нашей команде
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="header__info-item">
+                              <div class="info-item-box">
+                                 <div class="info__num">
+                                    100%
+                                 </div>
+                                 <p class="info__text">
+                                    отдачи для
+                                 </p>
+                                 <p class="info__text">
+                                    каждого мероприятия
+                                 </p>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+
+      <main class="main">
+
+         <section class="company section-padding" id="company">
+            <div class="container">
+               <div class="company__inner">
+                  <div class="company__pictures-block">
+                     <div class="company__pictures">
+                        <img class="company__img" src="images/company-bg.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="company__content-block">
+                     <div class="company__content-inner">
+                        <div class="section-title__block">
+                           <div class="section-title__inner company-title__inner">
+                              <h3 class="section__title">
+                                 Группа компаний Jam
+                              </h3>
+                              <h5 class="section__sub-title company__sub-title">
+                                 молодежное кейтеринг пространство
+                              </h5>
+                           </div>
+                        </div>
+                        <div class="company__text-box">
+                           <p class="company__text">
+                              Jam это группа компаний, деятельность которых направлена на реализацию проектов и
+                              достижение общих целей.
+                           </p>
+                           <p class="company__text">
+                              Основное направление - выездное обслуживание мероприятий: фестивали, ярмарки, детские
+                              праздники, спортивные, а так же частные мероприятия.
+                           </p>
+                           <p class="company__text">
+                              Наш опыт в сфере общественного питания более 10 лет. За это время мы отработали четкие
+                              стандарты по отбору поставщиков и качеству питания.
+                           </p>
+                           <p class="company__text">
+                              Команда «Jam» к каждому мероприятию относится с особой ответственностью и
+                              профессионализмом.
+                           </p>
+                        </div>
+                        <div class="company__button-box">
+                           <a class="proposal__btn" href="#">
+                              Получить предложение
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="nutrition section-padding">
+            <div class="container">
+               <div class="section-title__block">
+                  <div class="section-title__inner">
+                     <h3 class="section__title">
+                        Организуем питание
+                     </h3>
+                     <h5 class="section__sub-title">
+                        на вашем мероприятии с любым количеством гостей
+                     </h5>
+                  </div>
+               </div>
+            </div>
+            <div class="container nutrition__slider-container">
+               <div class="nutrition__inner">
+                  <div class="swiper nutrition__slider">
+                     <div class="swiper-wrapper nutrition-wrapper">
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item  nutrition__item--color-bg-1">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-01.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Фестивали и <br>
+                                    open-air
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item nutrition__item--color-bg-2">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-02.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Спортивные <br>
+                                    мероприятия
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item nutrition__item--color-bg-3">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-03.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Барбекю <br>
+                                    на природе
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item nutrition__item--color-bg-4">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-04.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Детские <br>
+                                    праздники
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item  nutrition__item--color-bg-1">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-01.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Фестивали и <br>
+                                    open-air
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide nutrition-slide">
+                           <div class="nutrition-slide__item nutrition__item--color-bg-2">
+                              <div class="nutrition__item-body">
+                                 <img class="nutrition__item-img" src="images/slider/nutrition/nutrition-img-02.svg"
+                                    alt="">
+                                 <h3 class="nutrition__item-title">
+                                    Спортивные <br>
+                                    мероприятия
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination nutrition-pagination"></div>
+                  </div>
+                  <div class="swiper-button-prev nutrition-button-prev">
+                     <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_3246_6)">
+                           <path
+                              d="M55.0163 16C35.6954 16 20.0327 31.67 20.0327 51C20.0327 70.33 35.6954 86 55.0163 86C74.3373 86 90 70.33 90 51C90 31.67 74.3373 16 55.0163 16Z"
+                              fill="white" />
+                           <path
+                              d="M55.0163 16C35.6954 16 20.0327 31.67 20.0327 51C20.0327 70.33 35.6954 86 55.0163 86C74.3373 86 90 70.33 90 51C90 31.67 74.3373 16 55.0163 16Z"
+                              stroke="#D9D9D9" />
+                           <path
+                              d="M47.7755 50.2921L46.9506 51.1171L58.5 62.6665L60.1499 61.0166L50.2504 51.1171L60.1499 41.2176L58.5 39.5677L47.7755 50.2921Z"
+                              fill="#111111" />
+                           <path
+                              d="M47.7755 50.2921L46.9506 51.1171L58.5 62.6665L60.1499 61.0166L50.2504 51.1171L60.1499 41.2176L58.5 39.5677L47.7755 50.2921Z"
+                              stroke="#111111" />
+                        </g>
+                        <defs>
+                           <filter id="filter0_d_3246_6" x="0.0332031" y="0" width="109.967" height="110"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="10" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3246_6" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3246_6"
+                                 result="shape" />
+                           </filter>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div class="swiper-button-next nutrition-button-next">
+                     <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_3165_317)">
+                           <path
+                              d="M54.9837 86C74.3046 86 89.9673 70.33 89.9673 51C89.9673 31.67 74.3046 16 54.9837 16C35.6627 16 20 31.67 20 51C20 70.33 35.6627 86 54.9837 86Z"
+                              fill="white" />
+                           <path
+                              d="M54.9837 86C74.3046 86 89.9673 70.33 89.9673 51C89.9673 31.67 74.3046 16 54.9837 16C35.6627 16 20 31.67 20 51C20 70.33 35.6627 86 54.9837 86Z"
+                              stroke="#D9D9D9" />
+                           <path
+                              d="M62.2245 51.7079L63.0494 50.8829L51.5 39.3335L49.8501 40.9834L59.7496 50.8829L49.8501 60.7824L51.5 62.4323L62.2245 51.7079Z"
+                              fill="#111111" />
+                           <path
+                              d="M62.2245 51.7079L63.0494 50.8829L51.5 39.3335L49.8501 40.9834L59.7496 50.8829L49.8501 60.7824L51.5 62.4323L62.2245 51.7079Z"
+                              stroke="#111111" />
+                        </g>
+                        <defs>
+                           <filter id="filter0_d_3165_317" x="0" y="0" width="109.967" height="110"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="10" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3165_317" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3165_317"
+                                 result="shape" />
+                           </filter>
+                        </defs>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="concept section-padding">
+            <div class="container">
+               <div class="section-title__block">
+                  <div class="section-title__inner">
+                     <h3 class="section__title">
+                        Концепции меню
+                     </h3>
+                     <h5 class="section__sub-title">
+                        В каком стиле устроим праздник?
+                     </h5>
+                  </div>
+               </div>
+               <div class="concept__inner">
+                  <ul class="concept__list concept__list-top">
+                     <li class="concept__item concept__item--1">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Waffle Jam
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Гонконгские вафли
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Японские вафли Тайяки
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item--2">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Mac & Cheese
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    с курочкой
+                                 </p>
+                                 <p class="concept__item-text">
+                                    с сыром
+                                 </p>
+                                 <p class="concept__item-text">
+                                    с пепперони
+                                 </p>
+                                 <p class="concept__item-text">
+                                    с жульеном
+                                 </p>
+                                 <p class="concept__item-text">
+                                    с ветчиной
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item--3">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Meat & Bread
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Мясо в лаваше
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Гирос
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item-dynamic" data-da=".concept__list-bottom,575,last"></li>
+                  </ul>
+                  <ul class="concept__list">
+                     <li class="concept__item concept__item-big concept__item--4">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Amstyle Jam
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Бургеры
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Хот доги
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Чизстейк
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Картошка фри
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item-big concept__item--5">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Latino Jam
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Буррито
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Кесадилья
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Тако
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul class="concept__list concept__list-bottom">
+                     <li class="concept__item concept__item--6">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Space Jam
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Чурос
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Пончики
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item--7">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Testo Jam
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Пельмени
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Вареники
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Бульон
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Соус
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="concept__item concept__item--8" data-da=".concept__item-dynamic,998,last">
+                        <div class="concept__item-block">
+                           <div class="concept__item-body">
+                              <h3 class="concept__item-title">
+                                 Drinks
+                              </h3>
+                              <div class="concept__item-list">
+                                 <p class="concept__item-text">
+                                    Холодные напитки
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Горячие напитки
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Молочные коктейли
+                                 </p>
+                                 <p class="concept__item-text">
+                                    Лимонады
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+
+
+
+      </main>
+
+
+      <footer class="footer">
+         <div class="container">
+
+            я футер
+         </div>
+      </footer>
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+   <script src="js/wNumb.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/nouislider.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
