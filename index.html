@@ -13,6 +13,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/splide.min.css">
+   <link rel="stylesheet" href="css/nouislider.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -78,9 +80,9 @@
                                  <a class="phone" href="tel:79852624836">
                                     +7 (985) 262-48-36
                                  </a>
-                                 <p class="phone__info">
+                                 <a class="phone__info" data-fancybox data-src="#call-back" href="javascript:;">
                                     Перезвоните мне
-                                 </p>
+                                 </a>
                               </div>
                               <div class="contacts__item contacts__item-mobile">
                                  <a class="phone__mobile" href="tel:79852624836">
@@ -88,7 +90,7 @@
                                  </a>
                               </div>
                               <div class="contacts__item contacts__item-btn">
-                                 <a class="order__btn" href="#">
+                                 <a class="order__btn" href="#offer">
                                     Заказать кейтеринг
                                  </a>
                               </div>
@@ -111,16 +113,16 @@
                                  <a class="menu__list-link" href="#company">Компания</a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">Кейтеринг</a>
+                                 <a class="menu__list-link" href="#offer">Кейтеринг</a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">Варианты меню</a>
+                                 <a class="menu__list-link" href="#concept">Варианты меню</a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">Преимущества</a>
+                                 <a class="menu__list-link" href="#benefits">Преимущества</a>
                               </li>
                               <li class="menu__list-item">
-                                 <a class="menu__list-link" href="#">Команда</a>
+                                 <a class="menu__list-link" href="#team">Команда</a>
                               </li>
                               <li class="menu__list-item">
                                  <a class="menu__list-link" href="#questions">Вопрос—ответ</a>
@@ -152,9 +154,9 @@
                            мероприятий любого формата!
                         </p>
                         <div class="header__btn-box">
-                           <button class="get__btn">
+                           <a class="get__btn" data-fancybox data-src="#application" href="javascript:;">
                               Получить предложение
-                           </button>
+                           </a>
                            <div class="special-offer">
                               <img class="special-offer__img" src="images/icons/special-offer-icon.svg" alt="">
                               <p class="special-offer__text">
@@ -225,7 +227,6 @@
             </div>
          </div>
       </header>
-
 
       <main class="main">
 
@@ -440,7 +441,7 @@
             </div>
          </section>
 
-         <section class="concept section-padding">
+         <section class="concept section-padding" id="concept">
             <div class="container">
                <div class="section-title__block">
                   <div class="section-title__inner">
@@ -667,7 +668,7 @@
             </div>
          </section>
 
-         <section class="advantages section-padding">
+         <section class="advantages section-padding" id="benefits">
             <div class="container">
                <div class="section-title__block">
                   <div class="section-title__inner advantages-title__inner">
@@ -770,10 +771,10 @@
             </div>
          </section>
 
-         <section class="team section-padding">
+         <section class="team section-padding" id="team">
             <div class="container">
                <div class="section-title__block">
-                  <div class="section-title__inner">
+                  <div class="section-title__inner team-title__inner">
                      <h3 class="section__title">
                         Наша команда
                      </h3>
@@ -848,7 +849,7 @@
                      <h3 class="section__title">
                         Проведенные мероприятия
                      </h3>
-                     <h5 class="section__sub-title">
+                     <h5 class="section__sub-title events__sub-title">
                         События в которых мы участвовали
                      </h5>
                   </div>
@@ -889,30 +890,599 @@
             </div>
          </section>
 
+         <section class="nature">
+            <div class="container">
+               <div class="nature__inner">
+                  <div class="nature__picture-block">
+                     <img class="nature__img" src="images/nature-bg.png" alt="">
+                  </div>
+                  <div class="nature__content-block">
+                     <div class="nature__content-body">
+                        <p class="nature__content-info">
+                           Наша ответственность
+                        </p>
+                        <h5 class="nature__content-title">
+                           С заботой о природе
+                        </h5>
+                        <p class="nature__content-text">
+                           Jam активно занимается сохранением природы, в том числе раздельным сбором мусора,
+                           пропагандируем фудшеринг и не выбрасываем качественные продукты, которые не были использованы
+                           на мероприятиях, а передаем их нуждающимся.
+                        </p>
+                        <p class="nature__content-text">
+                           Мы постоянные участники благотворительных акций, направленных на помощь животным.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
 
+         <section class="questions section-padding" id="questions">
+            <div class="container">
+               <div class="section-title__block">
+                  <div class="section-title__inner questions-title__inner">
+                     <h3 class="section__title questions__title">
+                        Часто задаваемые вопросы
+                     </h3>
+                  </div>
+               </div>
+               <div class="questions__inner">
+                  <div class="questions__block questions__left-block">
+                     <ul class="questions__block-items">
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Что такое выездной кейтеринг?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Какие сроки подготовки и оформления заказа?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Какие дополнительные услуги можно заказать?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Можно ли изменить заказ после его подтверждения?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Да. Наши клиенты имеют возможность изменить заказ по количеству гостей и выбранному
+                                    меню за 14 дней (две недели) до начала запланированного мероприятия
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="questions__block questions__right-block">
+                     <ul class="questions__block-items">
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Можно ли заказать индивидуальное меню?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Сколько гостей может обслужить компания Jam?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Какие вы принимаете формы оплаты?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="questions__block-item">
+                           <div class="questions__item-body block" data-spollers>
+                              <button type="button" class="questions-spoller-btn  block__title" data-spoller>
+                                 Есть ли возможность получить скидку?
+                              </button>
+                              <div class="questions__item-text">
+                                 <p>
+                                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                                    тексты.
+                                    Жизни, залетают маленькая лучше, которой меня живет возвращайся пунктуация прямо
+                                    заглавных большой проектах океана сбить своих составитель? Предупредила, текстами
+                                    даже?
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
 
+         <section class="offer" id="offer">
+            <div class="container offer__container">
+               <div class="offer__inner">
+                  <div class="offer__body">
+                     <div class="offer__content">
+                        <div class="offer__info">
+                           Узнайте стоимость
+                        </div>
+                        <h3 class="offer__title">
+                           <b>Получите персональное предложение</b> по кейтерингу на основе ваших пожеланий
+                        </h3>
+                        <p class="offer__title-description">
+                           Подберем оптимальное меню и дадим рекомендации, как сэкономить и ничего
+                           не забыть
+                        </p>
+                        <ul class="offer__list">
+                           <li class="offer__item">
+                              <img class="offer__img" src="images/icons/offer-icon.svg" alt="">
+                              <p class="offer__text">
+                                 Вышлем предложение по вашим условиям
+                              </p>
+                           </li>
+                           <li class="offer__item">
+                              <img class="offer__img" src="images/icons/offer-icon.svg" alt="">
+                              <p class="offer__text">
+                                 Исключим нежелательные продукты
+                              </p>
+                           </li>
+                           <li class="offer__item">
+                              <img class="offer__img" src="images/icons/offer-icon.svg" alt="">
+                              <p class="offer__text">
+                                 Забронируем дату мероприятия
+                              </p>
+                           </li>
+                           <li class="offer__item">
+                              <img class="offer__img" src="images/icons/offer-icon.svg" alt="">
+                              <p class="offer__text">
+                                 Проведем дегустацию
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="offer__price">
+                        <form class="offer__form" action="#">
+                           <div class="offer__price-body">
+                              <div class="offer__box offer__price-box">
+                                 <div class="offer__price-title">
+                                    Бюджет:
+                                 </div>
+                                 <div class="price-range-slider__body">
+                                    <div class="offer-price__inputs">
+                                       <div class="offer-price__input-box">
+                                          <label class="offer-price__label offer-price__label-1">
+                                             <span class="offer-price__text"></span>
+                                             <input type="number" min="1000" max="100000" placeholder=""
+                                                class="offer-price__input" id="input-0">
+                                             <span class="offer-price__text"></span>
+                                          </label>
+                                       </div>
+                                       <div class="offer-price__input-box">
+                                          <label class="offer-price__label offer-price__label-2">
+                                             <span class="offer-price__text"></span>
+                                             <input type="number" min="1000" max="100000" placeholder=""
+                                                class="offer-price__input" id="input-1">
+                                             <span class="offer-price__text"></span>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="offer-price__slider" id="price__range-slider"></div>
+                                 </div>
+                              </div>
+                              <div class="offer__box offer__date-box">
+                                 <div class="offer__date-body">
+                                    <div class="offer__date-item">
+                                       <div class="offer__guests-title">
+                                          Кол-во гостей:
+                                       </div>
+                                       <div class="offer__guests-inner">
+                                          <input class="offer__guests-input" type="number" autocomplete="off"
+                                             placeholder="50">
+                                       </div>
+                                    </div>
+                                    <div class="offer__date-item">
+                                       <div class="offer__date-title">
+                                          Дата:
+                                       </div>
+                                       <input class="offer__date-input" type="text" autocomplete="off"
+                                          placeholder="01.06.2023">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="offer__box offer__contacts-box">
+                                 <div class="offer__contacts-title">
+                                    Телефон:
+                                 </div>
+                                 <div class="offer__contacts-inner">
+                                    <input class="offer__contacts-input" type="tel" placeholder="+7 (999) 999 99 99">
+                                 </div>
+                              </div>
+                              <div class="offer__box offer__btn-box">
+                                 <button class="offer__btn">
+                                    Получить предложение
+                                 </button>
+                              </div>
+                              <div class="offer__box offer__description-box">
+                                 <p class="offer__description">
+                                    Нажимая на кнопку “Получить предложение”, вы даете согласие на обработку своих
+                                    персональных данных
+                                 </p>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-
-
-
-
-
+         <section class="contacts" id="contacts">
+            <h6 class="tech__title">Контакты</h6>
+            <div class="container container__container">
+               <div class="contacts__inner">
+                  <div class="contacts__block">
+                     <div class="contacts__body">
+                        <div class="contacts__box-map">
+                           <div class="contacts__title">
+                              Мы на связи
+                           </div>
+                        </div>
+                        <div class="contacts__box-map">
+                           <div class="contacts__phone-inner">
+                              <a class="phone-map" href="tel:79852624836">
+                                 +7 (985) 262-48-36
+                              </a>
+                              <a class="phone-map" href="tel:79652600890">
+                                 +7 (965) 260-08-90
+                              </a>
+                           </div>
+                        </div>
+                        <div class="contacts__box-map">
+                           <a class="contacts__mail" href="mailto:info@jamcatering.ru">
+                              info@jamcatering.ru
+                           </a>
+                        </div>
+                        <div class="contacts__box-map">
+                           <address class="contacts__address">
+                              г. Москва <br>
+                              ул. Александра Пушкина, д. 1
+                           </address>
+                        </div>
+                        <div class="contacts__box-map">
+                           <div class="contacts__social-map">
+                              <ul class="contacts__social-list-map">
+                                 <li class="contacts__social-item-map">
+                                    <a class="contacts__social-link-map" href="#">
+                                       <svg class="social__img-map social__img-whatsapp" width="40" height="41"
+                                          viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect y="0.5" width="40" height="40" rx="20" fill="#20BC5F" />
+                                          <path
+                                             d="M24.3289 22.3885C24.0947 22.2682 22.9281 21.6967 22.7111 21.6193C22.4941 21.5377 22.3352 21.499 22.1783 21.7396C22.0193 21.9781 21.5682 22.5088 21.4264 22.6699C21.2889 22.8289 21.1492 22.8482 20.915 22.7301C19.5229 22.034 18.6098 21.4883 17.6924 19.9135C17.4496 19.4945 17.9352 19.5246 18.3885 18.6201C18.4658 18.4611 18.4271 18.3258 18.367 18.2055C18.3068 18.0852 17.8342 16.9207 17.6365 16.4459C17.4453 15.984 17.2477 16.0484 17.1037 16.0398C16.9662 16.0312 16.8094 16.0312 16.6504 16.0312C16.4914 16.0312 16.2357 16.0914 16.0188 16.3256C15.8018 16.5641 15.1895 17.1377 15.1895 18.3021C15.1895 19.4666 16.0381 20.5945 16.1541 20.7535C16.2744 20.9125 17.8234 23.3016 20.2018 24.3307C21.7057 24.9795 22.2943 25.0354 23.0463 24.9236C23.5039 24.8549 24.4471 24.3521 24.6426 23.7957C24.8381 23.2414 24.8381 22.7666 24.7801 22.6678C24.7221 22.5625 24.5631 22.5023 24.3289 22.3885Z"
+                                             fill="white" />
+                                          <path
+                                             d="M28.8775 16.7703C28.3919 15.6166 27.6958 14.5811 26.8085 13.6916C25.9212 12.8043 24.8857 12.1061 23.7298 11.6227C22.5482 11.1264 21.2935 10.875 20.0001 10.875H19.9572C18.6552 10.8814 17.3941 11.1393 16.2081 11.6463C15.063 12.1361 14.0361 12.8322 13.1573 13.7195C12.2786 14.6068 11.589 15.6381 11.112 16.7875C10.6179 17.9777 10.3687 19.2432 10.3751 20.5451C10.3816 22.0361 10.7382 23.5164 11.4064 24.8398V28.1055C11.4064 28.6512 11.8489 29.0938 12.3947 29.0938H15.6624C16.9859 29.7619 18.4661 30.1186 19.9572 30.125H20.0023C21.2892 30.125 22.5374 29.8758 23.7126 29.3881C24.862 28.909 25.8954 28.2215 26.7806 27.3428C27.6679 26.4641 28.3661 25.4371 28.8538 24.292C29.3609 23.1061 29.6187 21.8449 29.6251 20.543C29.6316 19.2346 29.378 17.9648 28.8775 16.7703ZM25.6312 26.1805C24.1251 27.6715 22.1271 28.4922 20.0001 28.4922H19.9636C18.6681 28.4857 17.3812 28.1635 16.2447 27.5576L16.0642 27.4609H13.0392V24.4359L12.9425 24.2555C12.3366 23.1189 12.0144 21.832 12.0079 20.5365C11.9993 18.3945 12.8179 16.3836 14.3197 14.8689C15.8193 13.3543 17.8238 12.5164 19.9657 12.5078H20.0023C21.0765 12.5078 22.1185 12.7162 23.1003 13.1287C24.0585 13.5305 24.9179 14.1084 25.657 14.8475C26.3939 15.5844 26.9739 16.4459 27.3757 17.4041C27.7925 18.3967 28.0009 19.4494 27.9966 20.5365C27.9837 22.6764 27.1437 24.6809 25.6312 26.1805Z"
+                                             fill="white" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li class="contacts__social-item-map">
+                                    <a class="contacts__social-link-map" href="#">
+                                       <svg class="social__img-map social__img-telegram" width="40" height="41"
+                                          viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect y="0.5" width="40" height="40" rx="20" fill="#0088CC"
+                                             fill-opacity="0.9" />
+                                          <path
+                                             d="M30 12.6052L10 20.5L17.3684 21.5526M30 12.6052L27.3684 28.3947L17.3684 21.5526M30 12.6052L17.3684 21.5526M17.3684 21.5526V27.3421L20.7882 23.8925"
+                                             stroke="white" stroke-width="1.57895" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                              <p class="contacts__info-map">
+                                 Мы в мессенджерах
+                                 Отвечаем в течение 1 минуты
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="maps__block">
+               <div id="map-jam" class="contacts-map"></div>
+            </div>
+            <div class="maps__block2">
+               <div id="map-jam2" class="contacts-map"></div>
+            </div>
+            <div class="maps__block3">
+               <div id="map-jam3" class="contacts-map"></div>
+            </div>
+         </section>
 
       </main>
 
-
       <footer class="footer">
          <div class="container">
-
-            я футер
+            <div class="footer__inner">
+               <div class="footer__top">
+                  <div class="footer__top-item">
+                     <a class="footer__logo" href="#">
+                        <img class="footer__logo-img" src="images/footer__logo.svg" alt="">
+                     </a>
+                     <p class="footer__info">
+                        Организация выездного ресторанного обслуживания массовых мероприятий
+                     </p>
+                  </div>
+                  <div class="footer__top-item ">
+                     <div class="footer__item-consultation">
+                        <div class="consultation__title-box">
+                           <div class="consultation__title-inner">
+                              <div class="consultation__title">
+                                 Консультация
+                              </div>
+                              <p class="consultation__text">
+                                 Перезвоним в течение 10 минут
+                              </p>
+                           </div>
+                           <img class="consultation__img" src="images/icons/consultation-img.svg" alt="">
+                        </div>
+                        <div class="consultation__input-inner">
+                           <input class="consultation__input" type="tel" autocapitalize="off"
+                              placeholder="+7 (999) 999 99 99">
+                        </div>
+                        <a class="consultation__btn" data-fancybox data-src="#call-back" href="javascript:;">
+                           Перезвонить
+                        </a>
+                        <p class="consultation__info">
+                           Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных
+                        </p>
+                     </div>
+                  </div>
+                  <div class="footer__top-item">
+                     <div class="footer__navigation">
+                        <div class="footer__navigation-body block" data-spollers="435,max">
+                           <button class="footer__navigation-title block__title" data-spoller>
+                              Разделы сайта
+                           </button>
+                           <nav class="footer__menu">
+                              <ul class="footer-menu__list">
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Компания</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Кейтеринг</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Варианты меню</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Преимущества</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Команда</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Вопрос—ответ</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Контакты</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer__top-item">
+                     <div class="footer__contacts">
+                        <div class="footer__contacts-box">
+                           <a class="footer-contacts__phone" href="tel:79852624836">
+                              +7 (985) 262-48-36
+                           </a>
+                           <a class="footer-contacts__phone" href="tel:79652600890">
+                              +7 (965) 260-08-90
+                           </a>
+                           <div class="footer-contacts__info">
+                              Мы на связи
+                           </div>
+                        </div>
+                        <div class="footer__contacts-box">
+                           <a class="footer-contacts__mail" href="mailto:info@jamcatering.ru">
+                              info@jamcatering.ru
+                           </a>
+                        </div>
+                        <div class="footer__contacts-box">
+                           <ul class="footer__social-list">
+                              <li class="footer-social-list__item">
+                                 <a class="footer-social__link footer-whatsapp" href="#">
+                                    <svg class="footer-social__img" width="41" height="41" viewBox="0 0 41 41"
+                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.333984" y="0.0917969" width="40" height="40" rx="20" fill="#20BC5F" />
+                                       <path
+                                          d="M24.6629 21.9803C24.4287 21.86 23.2621 21.2885 23.0451 21.2111C22.8281 21.1295 22.6691 21.0908 22.5123 21.3314C22.3533 21.5699 21.9021 22.1006 21.7604 22.2617C21.6229 22.4207 21.4832 22.44 21.249 22.3219C19.8568 21.6258 18.9437 21.0801 18.0264 19.5053C17.7836 19.0863 18.2691 19.1164 18.7225 18.2119C18.7998 18.0529 18.7611 17.9176 18.701 17.7973C18.6408 17.677 18.1682 16.5125 17.9705 16.0377C17.7793 15.5758 17.5816 15.6402 17.4377 15.6316C17.3002 15.623 17.1434 15.623 16.9844 15.623C16.8254 15.623 16.5697 15.6832 16.3527 15.9174C16.1357 16.1559 15.5234 16.7295 15.5234 17.8939C15.5234 19.0584 16.3721 20.1863 16.4881 20.3453C16.6084 20.5043 18.1574 22.8934 20.5357 23.9225C22.0396 24.5713 22.6283 24.6271 23.3803 24.5154C23.8379 24.4467 24.7811 23.9439 24.9766 23.3875C25.1721 22.8332 25.1721 22.3584 25.1141 22.2596C25.0561 22.1543 24.8971 22.0941 24.6629 21.9803Z"
+                                          fill="white" />
+                                       <path
+                                          d="M29.2114 16.3621C28.7259 15.2084 28.0298 14.1729 27.1425 13.2834C26.2552 12.3961 25.2197 11.6979 24.0638 11.2145C22.8822 10.7182 21.6275 10.4668 20.3341 10.4668H20.2911C18.9892 10.4732 17.7281 10.7311 16.5421 11.2381C15.397 11.7279 14.37 12.424 13.4913 13.3113C12.6126 14.1986 11.923 15.2299 11.446 16.3793C10.9519 17.5695 10.7027 18.835 10.7091 20.1369C10.7156 21.6279 11.0722 23.1082 11.7404 24.4316V27.6973C11.7404 28.243 12.1829 28.6855 12.7286 28.6855H15.9964C17.3198 29.3537 18.8001 29.7104 20.2911 29.7168H20.3363C21.6232 29.7168 22.8714 29.4676 24.0466 28.9799C25.196 28.5008 26.2294 27.8133 27.1146 26.9346C28.0019 26.0559 28.7001 25.0289 29.1878 23.8838C29.6948 22.6979 29.9527 21.4367 29.9591 20.1348C29.9655 18.8264 29.712 17.5566 29.2114 16.3621ZM25.9652 25.7723C24.4591 27.2633 22.4611 28.084 20.3341 28.084H20.2976C19.0021 28.0775 17.7152 27.7553 16.5786 27.1494L16.3982 27.0527H13.3732V24.0277L13.2765 23.8473C12.6706 22.7107 12.3484 21.4238 12.3419 20.1283C12.3333 17.9863 13.1519 15.9754 14.6536 14.4607C16.1532 12.9461 18.1577 12.1082 20.2997 12.0996H20.3363C21.4105 12.0996 22.4525 12.308 23.4343 12.7205C24.3925 13.1223 25.2519 13.7002 25.9909 14.4393C26.7279 15.1762 27.3079 16.0377 27.7097 16.9959C28.1265 17.9885 28.3349 19.0412 28.3306 20.1283C28.3177 22.2682 27.4777 24.2727 25.9652 25.7723Z"
+                                          fill="white" />
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li class="footer-social-list__item">
+                                 <a class="footer-social__link footer-telegram" href="#">
+                                    <svg class="footer-social__img" width="41" height="41" viewBox="0 0 41 41"
+                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.333984" y="0.0917969" width="40" height="40" rx="20" fill="#0088CC"
+                                          fill-opacity="0.9" />
+                                       <g clip-path="url(#clip0_3165_819)">
+                                          <path
+                                             d="M30.334 12.1973L10.334 20.092L17.7024 21.1446M30.334 12.1973L27.7024 27.9868L17.7024 21.1446M30.334 12.1973L17.7024 21.1446M17.7024 21.1446V26.9341L21.1222 23.4845"
+                                             stroke="white" stroke-width="1.57895" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_3165_819">
+                                             <rect width="23.0263" height="21.842" fill="white"
+                                                transform="translate(8.82031 9.1709)" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__bottom">
+                  <div class="footer__bottom-inner">
+                     <div class="footer__copy">© Jam. 2023</div>
+                     <a class="footer__copy-text" href="#">
+                        Политика обработки персональных данных
+                     </a>
+                  </div>
+               </div>
+            </div>
          </div>
       </footer>
-
 
    </div>
 
 
+   <div class="popup__application" id="application">
+      <form class="popup__application-form" action="#">
+         <div class="popup__application-inner">
+            <div class="application__title-box">
+               <div class="application__title">
+                  Заявка
+               </div>
+               <div class="application__sub-title">
+                  Заполните форму и менеджер позвонит и ответит на все интересующие вопросы
+               </div>
+            </div>
+            <div class="application__user-box">
+               <div class="user__item">
+                  <label for="formNameModal" class="application-form__label">Имя:</label>
+                  <input id="formNameModal" type="text" name="name" class="application-form__input"
+                     placeholder="Иван Иванов" autocomplete="off">
+               </div>
+               <div class="user__item">
+                  <label for="formPhoneModal" class="application-form__label">Номер телефона:</label>
+                  <input id="formPhoneModal" type="tel" name="phone" class="application-form__input"
+                     placeholder="+7 (999) 999 99 99" autocomplete="off">
+               </div>
+            </div>
+            <div class="application__btn-box">
+               <button class="application__btn" type="submit">
+                  Отправить
+               </button>
+            </div>
+            <div class="application__description-box">
+               <p class="application__description">
+                  Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных
+               </p>
+            </div>
+         </div>
+      </form>
+   </div>
 
+   <div class="popup__call-back" id="call-back">
+      <form class="popup__call-back-form" action="#">
+         <div class="popup__call-back-inner">
+            <div class="call-back__title-box">
+               <div class="call-back__title">
+                  Перезвонить?
+               </div>
+               <div class="call-back__sub-title">
+                  Оставьте телефон и мы перезвоним в течение 5 минут
+               </div>
+            </div>
+            <div class="call-back__user-box">
+               <div class="user__item">
+                  <label for="formPhone" class="call-back-form__label">Номер телефона:</label>
+                  <input id="formPhone" type="tel" name="phone" class="call-back-form__input"
+                     placeholder="+7 (999) 999 99 99" autocomplete="off">
+               </div>
+            </div>
+            <div class="call-back__btn-box">
+               <button class="call-back__btn" type="submit">
+                  Отправить
+               </button>
+            </div>
+            <div class="call-back__description-box">
+               <p class="application__description">
+                  Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных
+               </p>
+            </div>
+         </div>
+      </form>
+   </div>
 
 
 
